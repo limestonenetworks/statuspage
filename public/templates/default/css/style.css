@@ -6,7 +6,7 @@ a { color: #5EAC26; font-weight: 800; text-decoration: none; }
 
 .wrapper { width: 890px; margin: 0 auto; text-align: left; }
 
-#header { background-image: url('templates/default/images/header_bg.png'); background-position: top center; background-repeat: no-repeat; background-color: #171717; padding: 20px 0 0 0; height: 128px; }
+#header { background-image: url('../images/header_bg.png'); background-position: top center; background-repeat: no-repeat; background-color: #171717; padding: 20px 0 0 0; height: 128px; }
 #header #title { float: right; margin-top: -55px; color: #fff; text-align: right; }
 #header #title h2 { font-size: 18px; }
 #header #title #lastupdate, #header #title #autorefresh { font-size: 11px; color: #999; vertical-align: middle; }
@@ -19,7 +19,7 @@ a { color: #5EAC26; font-weight: 800; text-decoration: none; }
 #content .dchead h3 { font-size: 18px; color: #fff; }
 #content .dchead .twitter-follow-button { float: right; margin-top: -25px; }
 
-#content .services { text-align: center; border-collapse: collapse; margin: 10px; width: 98%; border: 1px solid #ccc; background-image: url('templates/default/images/statbar_bg.jpg'); background-position: top; background-repeat: repeat-x; background-color: #eee; height: 50px; font-size: 15px; font-weight: 800; }
+#content .services { text-align: center; border-collapse: collapse; margin: 10px; width: 98%; border: 1px solid #ccc; background-image: url('../images/statbar_bg.jpg'); background-position: top; background-repeat: repeat-x; background-color: #eee; height: 50px; font-size: 15px; font-weight: 800; }
 #content .services img { vertical-align: -30%; padding-right: 5px; }
 #content .services td { border-left: 1px solid #ccc; }
 
