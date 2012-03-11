@@ -40,7 +40,7 @@ class Twitter {
 		
 	}
 
-	private function prepareMessage($message, $limit = 119) {
+	private function prepareMessage($message, $limit = 137) {
 		if ($this->testing) $limit -= 15;
 
 		if (strlen($message) > $limit) {
