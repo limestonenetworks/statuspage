@@ -40,3 +40,7 @@ You can view this code in production at http://status.lstn.net/
 
 ## FAQ
 * If you receive the error ```Fatal error: Class 'SQLite3' not found```, then your PHP instance does not have the SQLite3 module loaded.
+
+## License
+
+This project is distributed under the GNU GPL v3 license which can be found in COPYING.
