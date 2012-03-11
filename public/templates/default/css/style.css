@@ -1,0 +1,95 @@
+body { background-color: #333; margin: 0; padding: 0; text-align: center; font-family: Arial; color: #333; }
+
+h1, h2, h3, h4 { margin: 0; padding: 0; font-weight: normal; }
+
+a { color: #5EAC26; font-weight: 800; text-decoration: none; }
+
+.wrapper { width: 890px; margin: 0 auto; text-align: left; }
+
+#header { background-image: url('templates/default/images/header_bg.png'); background-position: top center; background-repeat: no-repeat; background-color: #171717; padding: 20px 0 0 0; height: 128px; }
+#header #title { float: right; margin-top: -55px; color: #fff; text-align: right; }
+#header #title h2 { font-size: 18px; }
+#header #title #lastupdate, #header #title #autorefresh { font-size: 11px; color: #999; vertical-align: middle; }
+#header #title #autorefreshbox { width: 10px; height: 10px; }
+
+#content { margin-top: -60px; }
+#content.users { background-color: #fff; padding: 10px; margin-bottom: 10px; }
+#content .datacenter { background-color: #fff; margin-bottom: 10px; min-height: 550px; }
+#content .dchead { background-color: #333; color: #fff; padding: 15px 10px 15px 10px; margin-bottom: 5px; }
+#content .dchead h3 { font-size: 18px; color: #fff; }
+#content .dchead .twitter-follow-button { float: right; margin-top: -25px; }
+
+#content .services { text-align: center; border-collapse: collapse; margin: 10px; width: 98%; border: 1px solid #ccc; background-image: url('templates/default/images/statbar_bg.jpg'); background-position: top; background-repeat: repeat-x; background-color: #eee; height: 50px; font-size: 15px; font-weight: 800; }
+#content .services img { vertical-align: -30%; padding-right: 5px; }
+#content .services td { border-left: 1px solid #ccc; }
+
+#content .perday { text-align: center; border-collapse: collapse; margin: 10px; }
+#content .perday th { width: 80px; border: 1px solid #eee; padding: 5px; font-weight: normal; }
+#content .perday td { border: 1px solid #eee; padding: 5px; }
+
+#content .log { width: 475px; padding: 5px 5px 5px 10px; }
+#content .log h4 { font-size: 16px; border-bottom: 1px dotted #ccc; padding-bottom: 2px; margin-bottom: 10px;  }
+#content .log .incident { border-left: 8px solid #ccc; padding: 10px 0 15px 10px; margin-bottom: 20px; }
+#content .log .incident.severity-warning { border-color: #f93; }
+#content .log .incident.severity-offline { border-color: #900; }
+#content .log .incident .incidentheader { border-bottom: 1px solid #ccc; padding-bottom: 3px; margin-bottom: 10px; }
+#content .log .incident .incidentheader img { vertical-align: middle; }
+#content .log .incident .incidentheader .title { font-size: 12px; font-weight: 800; }
+#content .log .incident .incidentheader .status { font-size: 11px; float: right; margin-top: 4px; }
+#content .log .incident .updates .update { font-size: 12px; padding-bottom: 10px; }
+#content .log .incident .updates .update .timestamp { font-size: 12px; color: #666; text-transform: uppercase; padding-right: 5px; }
+#content .log .incident .updates .posttotwitter { padding: 0; margin: 0; float: right; font-size: 10px; }
+#content .log .incident .updates .posttotwitter input { vertical-align: -2px; }
+
+#content .rightstuff { float: right; width: 365px; margin-right: 10px; }
+#content .rightstuff .uhHuh { border: 1px solid #eee; background-color: #fafafa; padding: 10px; font-size: 12px; line-height: 20px; margin-bottom: 10px; }
+#content .rightstuff .uhHuh .title { font-size: 13px; font-weight: 800; }
+
+#content #login { margin-bottom: 10px; background-color: #fff; padding: 10px; }
+#content #login fieldset { border: 0; }
+
+#content .updatebox { width: 100%; font-size: 12px; }
+
+#content .maintschedule, #content .maintschedule ul { margin: 5px 0 5px 5px; padding: 0; list-style: none; font-size: 14px; }
+#content .maintschedule ul { font-size: 12px; }
+#content .maintschedule ul li .readmore { float: right; }
+#content .maintschedule ul li .time { font-size: 10px; color: #666; padding-bottom: 2px; vertical-align: middle; padding-right: 5px; }
+#content .maintschedule ul li { clear: right; border-bottom: 1px solid #ccc; }
+#admincontrols { color: #ccc; margin-top: -75px; height: 95px; }
+#admincontrols ul { list-style: none; margin: 0; padding: 0; float: right; font-size: 17px; margin-top: -35px; }
+#admincontrols ul li { display: inline; padding-left: 5px; }
+#admincontrols ul li a { color: #ccc; border-bottom: 1px solid #fff; text-decoration: none; }
+
+#content.users h2 { font-size: 18px; font-weight: normal; }
+#content.users fieldset { border: 0; }
+#content.users fieldset label { display: block; }
+
+#addincident, #maintfields, #readmebox { display: none; }
+
+p.error { font-weight: 800; color: #f00; }
+
+.ui-dialog { text-align: left; font-size: 13px; }
+.ui-dialog label, .ui-dialog input { display:block; }
+.ui-dialog label { margin-top: 8px; }
+.ui-dialog input, .ui-dialog textarea { width: 94%; font-size: 11px; padding: 5px; }
+.ui-dialog textarea { height: 70px; }
+.ui-dialog select { width: 99%; font-size: 11px; padding: 5px; }
+.ui-dialog fieldset { padding:0; border:0; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#ui-datepicker-div.ui-widget { font-size: 12px; }
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 13px; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+#footer { font-size: 13px; text-align: right; }
+#footer img { float: right; padding-left: 20px; }
+#footer .text { float: right; width: 500px; text-align: right; }
+#footer ul { list-style: none; margin: 0; padding: 5px 0 0 0; }
+#footer ul li { display: inline; color: #999; padding-left: 25px; }
+#footer ul li a { color: #999; }
+#footer p { color: #666; margin: 0; padding: 5px 0 0 0; }
