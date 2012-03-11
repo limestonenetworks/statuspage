@@ -23,6 +23,6 @@ $config['footer_links'] = array( //this is optional, delete this to get rid of a
 );
 $config['textarea'] = array(
 	'heading' => 'Get Support',
-	'text' => 'Having service issues? In the event that our ticketing system, OnePortal, is offline we will monitor emails sent to <a href="mailto:support@limestonenetworks.com">support@limestonenetworks.com</a>. Please be advised that unless OnePortal is inaccessable this mail box is not actively monitored and you should <a href="https://one.limestonenetworks.com/support/newticket.html" target="_blank">open a ticket</a> for support.'
+	'text' => 'Having service issues? In the event that our ticketing system is offline we will monitor emails sent to <a href="mailto:support@example.com">support@example.com</a>. Please be advised that unless our ticketing system is inaccessable this mail box is not actively monitored and you should <a href="https://example.com/support/newticket.html" target="_blank">open a ticket</a> for support.'
 );
 ?>
