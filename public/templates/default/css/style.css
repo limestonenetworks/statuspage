@@ -6,7 +6,7 @@ a { color: #5EAC26; font-weight: 800; text-decoration: none; }
 
 .wrapper { width: 890px; margin: 0 auto; text-align: left; }
 
-#header { background-image: url('../images/header_bg.png'); background-position: top center; background-repeat: no-repeat; background-color: #171717; padding: 20px 0 0 0; height: 128px; }
+#header { background-image: background-position: top center; background-repeat: no-repeat; background-color: #171717; padding: 20px 0 0 0; height: 128px; }
 #header #title { float: right; margin-top: -55px; color: #fff; text-align: right; }
 #header #title h2 { font-size: 18px; }
 #header #title #lastupdate, #header #title #autorefresh { font-size: 11px; color: #999; vertical-align: middle; }
@@ -86,9 +86,9 @@ p.error { font-weight: 800; color: #f00; }
 .ui-timepicker-div td { font-size: 13px; }
 .ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
 
-#footer { font-size: 13px; text-align: right; }
+#footer { font-size: 13px; text-align: right; padding-bottom: 35px; }
 #footer img { float: right; padding-left: 20px; }
-#footer .text { float: right; width: 500px; text-align: right; }
+#footer .text { float: right; width: 600px; text-align: right; }
 #footer ul { list-style: none; margin: 0; padding: 5px 0 0 0; }
 #footer ul li { display: inline; color: #999; padding-left: 25px; }
 #footer ul li a { color: #999; }
