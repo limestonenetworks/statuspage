@@ -40,6 +40,16 @@ You can view this code in production at http://status.lstn.net/
 
 ## FAQ
 * If you receive the error ```Fatal error: Class 'SQLite3' not found```, then your PHP instance does not have the SQLite3 module loaded.
+* How do I add services to a facility
+	1. SSH into your server and go to the directory "cache" that has "status.db" in it.
+
+	2. To get facility IDs run:
+	sqlite3 status.db "SELECT * FROM `facilities`"
+
+	4. Then run:
+	sqlite3 status.db "INSERT INTO facilities_services (facilities_id, friendly_name, status) VALUES (2, 'Web Server', 'online')"
+
+	I used "2" as the ID in my example, and "Web Server" as the service. You would simply run that command again making changes to those variables to add more services.
 
 ## License
 
