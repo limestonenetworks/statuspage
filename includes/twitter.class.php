@@ -44,9 +44,8 @@ class Twitter {
 		if ($this->testing) $limit -= 15;
 
 		if (strlen($message) > $limit) {
-			$words = str_word_count($message, 2);
-			$pos = array_keys($words);
-			$message = substr($message, 0, $pos[$limit]) . '...';
+			$message = wordwrap($message, $limit);
+			$message = substr($message, 0, strpos($message, "\n")) . '...';
 		}
 
 		if ($this->testing) echo "Final twitter message: {$message}\n";
