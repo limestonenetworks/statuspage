@@ -9,11 +9,26 @@ class Database {
 		$this->initialize();	
 	}
 
+	function _get_count_result($handle) {
+		$count = 0;
+		if (gettype($handle) == 'object') {
+                        $row = array();
+			$row = $handle->fetchArray();
+                        $count = $row['COUNT(*)'];
+                }
+                else {
+                        $count = $handle;
+                }
+
+		return $count;
+	}
+
 	function initialize() {
 		if (($this->sqlite = new SQLite3($this->dbpath)) === false) throw new Exception('Unable to save database file.');
 
 		$check_users = @$this->sqlite->query('SELECT COUNT(*) FROM users');
-		if ($check_users === false || $check_users < 1) {
+		$check_users_count = $this->_get_count_result($check_users);
+		if (!isset($check_users) || $check_users_count < 1) {
 			// Creating user table
 			echo "Creating user table...<br />\n";
 			$this->sqlite->query("CREATE TABLE users (id integer primary key autoincrement, username varchar unique, password varchar)");
@@ -25,7 +40,8 @@ class Database {
 		}
 
 		$check_facilities = @$this->sqlite->query('SELECT COUNT(*) FROM facilities');
-		if ($check_facilities === false || $check_facilities < 1) {
+		$check_facilities_count = $this->_get_count_result($check_facilities);
+		if ($check_facilities === false || $check_facilities_count < 1) {
 			// Creating facilities table
 			echo "Creating facilities table...<br />\n";
 			$this->sqlite->query("CREATE TABLE facilities (id integer primary key autoincrement, friendly_name varchar, visible int default 1)");
@@ -41,7 +57,8 @@ class Database {
 
 
 		$check_facilities_services = @$this->sqlite->query('SELECT COUNT(*) FROM facilities_services');
-		if ($check_facilities_services === false || $check_facilities_services < 1) {
+		$check_facilities_services_count = $this->_get_count_result($check_facilities_services);
+		if ($check_facilities_services === false || $check_facilities_services_count < 1) {
 			// Creating facilities_services table
 			echo "Creating facilities_services table...<br />\n";
 			$this->sqlite->query("CREATE TABLE facilities_services (id integer primary key autoincrement, facilities_id integer, friendly_name varchar, status varchar)");
