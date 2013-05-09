@@ -8,6 +8,7 @@ You can view this code in production at http://status.lstn.net/
 
 * SQLite3 PHP extension
 * Smarty template engine (http://www.smarty.net/) available in your PHP include path
+* Twitter OAuth (https://github.com/abraham/twitteroauth) available in your PHP include path
 
 ## Installation
 * Clone this repo: ```git clone git://github.com/limestonenetworks/statuspage.git```
