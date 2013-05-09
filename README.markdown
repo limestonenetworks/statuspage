@@ -6,7 +6,7 @@ You can view this code in production at http://status.lstn.net/
 
 ## Prerequisites
 
-* SQLite3 PHP module
+* SQLite3 PHP extension
 * Smarty template engine (http://www.smarty.net/) available in your PHP include path
 
 ## Installation
