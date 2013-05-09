@@ -4,6 +4,8 @@ This repo contains a lightweight network status page written in PHP with a SQLit
 
 You can view this code in production at http://status.lstn.net/
 
+This project is [Composer Enabled](http://getcomposer.org/).
+
 ## Prerequisites
 
 * SQLite3 PHP extension
