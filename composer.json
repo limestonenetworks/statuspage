@@ -1,0 +1,45 @@
+{
+	"name": "limestonenetworks/statuspage",
+	"description": "Status page for communicating incidents to a client base",
+	"version": "1.0.0-dev",
+	"type": "project",
+	"homepage": "https://github.com/limestonenetworks/statuspage",
+	"license": "GPL-3.0",
+	"authors": [
+		{
+			"name": "Kris Anderson",
+			"homepage": "https://github.com/kganders",
+			"role": "developer"
+		},
+		{
+			"name": "James Ward",
+			"homepage": "https://github.com/james-lsn/",
+			"role": "developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"ext-sqlite3": "*",
+		"smarty/smarty": "3.*",
+		"abraham/twitteroauth": "dev-master"
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "abraham/twitteroauth",
+				"version": "dev-master",
+				"dist": {
+					"url": "https://github.com/abraham/twitteroauth/zipball/master",
+					"type": "zip"
+				},
+				"source": {
+					"url": "git://github.com/abraham/twitteroauth.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		}
+	],
+	"include-path": ["vendor/abraham/twitteroauth"]
+}
