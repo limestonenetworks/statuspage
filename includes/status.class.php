@@ -52,7 +52,7 @@ class Status {
 		}
 
 		if (!empty($data['twitter'])) {
-			require_once('twitter.class.php');
+
 			$twitter = new Twitter;
 			$twitter->tweet("{$twitter_prefix} {$data['title']}");
 
@@ -155,7 +155,7 @@ class Status {
 		$insert = $sql->execute();
 
 		if ($data['twitterpost']) {
-			require_once('twitter.class.php');
+
 			$twitter = new Twitter;
 			$twitter->tweet($data['message']);
 		}
