@@ -1,0 +1,6 @@
+/cache
+/vendor
+/.project
+.idea
+
+composer.phar

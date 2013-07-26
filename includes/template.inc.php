@@ -1,5 +1,9 @@
 <?php
-require_once('smarty/Smarty.class.php');
+
+if (!class_exists('Smarty')) {
+	require_once('smarty/Smarty.class.php');
+}
+
 $smarty = new Smarty();
 
 $smarty->template_dir = "{$config['app_path']}/public/templates/{$config['template_name']}";

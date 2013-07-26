@@ -4,10 +4,19 @@ This repo contains a lightweight network status page written in PHP with a SQLit
 
 You can view this code in production at http://status.lstn.net/
 
+This project is [Composer Enabled](http://getcomposer.org/).
+
 ## Prerequisites
 
-* SQLite3 PHP module
+* SQLite3 PHP extension
 * Smarty template engine (http://www.smarty.net/) available in your PHP include path
+* Twitter OAuth (https://github.com/abraham/twitteroauth) available in your PHP include path
+
+
+To automatically fetch the prerequisites, run the command 
+
+```php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));" && ./composer.phar install```
+
 
 ## Installation
 * Clone this repo: ```git clone git://github.com/limestonenetworks/statuspage.git```
