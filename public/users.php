@@ -1,6 +1,6 @@
 <?php
 	require_once('../includes/base.inc.php');
-	include('../includes/users.class.php');
+
 	$auth = new Authentication;
 	$users = new Users;
 
