@@ -13,4 +13,3 @@ $smarty->assign('footer_links', $config['footer_links']);
 $smarty->assign('textarea', $config['textarea']);
 
 if ($config['smarty_debug']) $smarty->debugging = true;
-?>

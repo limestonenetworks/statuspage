@@ -13,4 +13,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('login.tpl');
 	$smarty->display('_footer.tpl');
-?>

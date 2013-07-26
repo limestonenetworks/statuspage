@@ -35,4 +35,3 @@ require_once('../includes/base.inc.php');
 			}
 		}
 	}
-?>

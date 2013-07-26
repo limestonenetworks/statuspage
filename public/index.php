@@ -50,4 +50,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('index.tpl');
 	$smarty->display('_footer.tpl');
-?>

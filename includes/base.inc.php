@@ -20,4 +20,3 @@ require_once('users.class.php');
 if (!class_exists('Smarty')) {
 	require_once('smarty/Smarty.class.php');
 }
-?>

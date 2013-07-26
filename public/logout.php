@@ -5,4 +5,3 @@
 
 	$auth->logout();
 	header('Location: index.php');
-?>

@@ -43,4 +43,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('users.tpl');
 	$smarty->display('_footer.tpl');
-?>
