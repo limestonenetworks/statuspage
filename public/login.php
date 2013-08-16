@@ -1,6 +1,6 @@
 <?php
-	include('../includes/base.inc.php');
-	include('../includes/authentication.class.php');
+	require_once('../includes/base.inc.php');
+
 	$auth = new Authentication;
 
 	if (isset($_POST['username'], $_POST['password'])) {
@@ -13,4 +13,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('login.tpl');
 	$smarty->display('_footer.tpl');
-?>

@@ -1,6 +1,5 @@
 <?php
 require_once('../includes/base.inc.php');
-require_once('../includes/status.class.php');
 
 	if (!empty($_SESSION['auth']['id'])) {
 		if (isset($_POST)) {
@@ -36,4 +35,3 @@ require_once('../includes/status.class.php');
 			}
 		}
 	}
-?>

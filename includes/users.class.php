@@ -77,4 +77,3 @@ class Users {
 		return $result;
 	}
 }
-?>
