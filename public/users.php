@@ -1,7 +1,6 @@
 <?php
-	include('../includes/base.inc.php');
-	include('../includes/users.class.php');
-	include('../includes/authentication.class.php');
+	require_once('../includes/base.inc.php');
+
 	$auth = new Authentication;
 	$users = new Users;
 
@@ -44,4 +43,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('users.tpl');
 	$smarty->display('_footer.tpl');
-?>

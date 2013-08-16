@@ -1,5 +1,5 @@
 <?php
-	include('../includes/base.inc.php');
+	require_once('../includes/base.inc.php');
 
 	if (!empty($_SESSION['auth']['id'])) {
 		if (!empty($_POST)) {
@@ -50,4 +50,3 @@
 	$smarty->display('_header.tpl');
 	$smarty->display('index.tpl');
 	$smarty->display('_footer.tpl');
-?>

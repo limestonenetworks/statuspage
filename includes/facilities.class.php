@@ -23,5 +23,3 @@ class Facilities {
 		return $row;
 	}
 }
-
-?>

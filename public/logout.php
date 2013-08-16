@@ -1,8 +1,7 @@
 <?php
-	include('../includes/base.inc.php');
-	include('../includes/authentication.class.php');
+	require_once('../includes/base.inc.php');
+
 	$auth = new Authentication;
 
 	$auth->logout();
 	header('Location: index.php');
-?>

@@ -13,7 +13,7 @@ This project is [Composer Enabled](http://getcomposer.org/).
 * Twitter OAuth (https://github.com/abraham/twitteroauth) available in your PHP include path
 
 
-To automatically fetch the prerequisites, run the command 
+To automatically fetch the prerequisites, you must have PHP 5.3.2+ and run the command 
 
 ```php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));" && ./composer.phar install```
 
