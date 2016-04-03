@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
 		<meta name="robots" content="all,index,follow" /> 
 		<meta name="revisit-after" content="7 days" /> 
-		<meta name="viewport" content="width=1024,initial-scale=0.7,user-scalable=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=0.7,user-scalable=no" />
 
 		<link type="text/css" rel="stylesheet" media="all" href="templates/default/css/smoothness/jquery-ui-1.8.18.custom.css" />	
 		<link type="text/css" rel="stylesheet" media="all" href="templates/default/css/style.css" />
