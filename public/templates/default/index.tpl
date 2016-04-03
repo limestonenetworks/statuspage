@@ -4,7 +4,7 @@
 			<div class="datacenter">
 				<div class="dchead">
 					<h3>{$facility.friendly_name}</h3>
-					<a href="https://twitter.com/{$twitter_handle}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{$twitter_handle}</a>
+					{if !empty($twitter_handle)}<a href="https://twitter.com/{$twitter_handle}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{$twitter_handle}</a>{/if}
 				</div>
 
 				<table class="services">
@@ -68,7 +68,7 @@
 								<span class="message">{$update.message}</span>
 							</div>
 							{/foreach}{/if}
-							{if $smarty.session.auth.id}<p><form action="" method="post" class="microupdate"><input type="text" name="update" class="updatebox" id="updateto{$incident.id}" /><p class="posttotwitter"><input type="checkbox" name="twitter" class="micrototwitter" checked="CHECKED" /> Post to Twitter</p><input type="hidden" name="incidentid" value="{$incident.id}"></form>{/if}
+							{if $smarty.session.auth.id}<p><form action="" method="post" class="microupdate"><input type="text" name="update" class="updatebox" id="updateto{$incident.id}" />{if !empty($twitter_handle)}<p class="posttotwitter"><input type="checkbox" name="twitter" class="micrototwitter" checked="CHECKED" /> Post to Twitter</p>{/if}<input type="hidden" name="incidentid" value="{$incident.id}"></form>{/if}
 						</div>
 					</div>
 					{/foreach}
@@ -112,8 +112,8 @@
 					<label for="initialupdate">Initial Update:</label>
 					<input type="text" name="update" id="initialupdate" />
 				</div>
-				<label for="incidenttwitter">Send to Twitter:</label>
-				<input type="checkbox" name="twitter" id="incidenttwitter" checked="CHECKED" />
+				{if !empty($twitter_handle)}<label for="incidenttwitter">Send to Twitter:</label>
+				<input type="checkbox" name="twitter" id="incidenttwitter" checked="CHECKED" />{/if}
 		</fieldset>
 		</form>
 	</div>
