@@ -9,7 +9,7 @@
 						{foreach from=$footer_links item=link}
 						<li><a href="{$link.url}">{$link.title}</a></li>
 						{/foreach}
-						<li><iframe src="github-buttons/github-btn.html?user=limestonenetworks&repo=statuspage&type=watch"  allowtransparency="true" frameborder="0" scrolling="0" width="62px" height="20px"></iframe></li>
+						<li><iframe src="github-buttons/github-btn.html?user=tinned-software&repo=statuspage&type=watch"  allowtransparency="true" frameborder="0" scrolling="0" width="62px" height="20px"></iframe></li>
 					</ul>
 				</div>
 			</div>
