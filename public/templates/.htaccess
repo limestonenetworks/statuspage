@@ -1,4 +1,4 @@
-Options -All SymLinksIfOwnerMatch
+Options SymLinksIfOwnerMatch
 <IfModule mod_rewrite.c>
   RewriteEngine On
   #return 404 for *.tpl *.conf *.cfg
